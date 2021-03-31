@@ -49,7 +49,7 @@ let DOM = {
                 return this.anchor.children;
             }
         },
-        home: document.querySelector('a.frame__home')
+        home: document.querySelector('a.frame__home'),
         game: document.querySelector('a.frame__game')
     }
 };
