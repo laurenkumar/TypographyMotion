@@ -46,6 +46,15 @@ let DOM = {
     }
 };
 
+new YT.Player('player', {
+            height: '390',
+            width: '640',
+            videoId: 'M7lc1UVf-VE',
+            events: {
+                onReady: e => e.target.playVideo()
+            }
+});
+
 // The gsap timeline (and some default settings) where the magic happens
 const timelineSettings = {
     staggerValue: 0.014,
