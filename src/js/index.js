@@ -137,7 +137,6 @@ new YT.Player('player', {
   
   function handlePercentage(filledInPixels) {
     filledInPixels = filledInPixels || 0;
-    console.log(filledInPixels + '%');
     if (filledInPixels > 50) {
       canvas.parentNode.removeChild(canvas);
     }
