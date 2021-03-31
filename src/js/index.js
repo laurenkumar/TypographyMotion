@@ -242,7 +242,7 @@ const switchContent = () => {
     DOM.links.about.stateElement[1].classList[DOM.content.about.isVisible ? 'remove' : 'add']('frame__about-item--current');
     timeline[DOM.content.about.isVisible ? 'reverse' : 'play']();
     DOM.content.about.isVisible = !DOM.content.about.isVisible;
-    DOM.content.game.isVisible = !DOM.content.about.isVisible;
+    DOM.content.game.isVisible = DOM.content.about.isVisible;
     DOM.content.home.isVisible = !DOM.content.about.isVisible;
 };
 
