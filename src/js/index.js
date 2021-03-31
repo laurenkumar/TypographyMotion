@@ -70,7 +70,7 @@ const timeline = gsap.timeline({paused: true})
     .to(document.body, {
         duration: 0.8,
         ease: 'Power1.easeInOut',
-        backgroundColor: '#c3b996'
+        backgroundColor: '#c4cac6'
     }, 'switchtime-=timelineSettings.charsDuration/4')
     // Start values for the about section elements that will animate in
     .set(DOM.content.about.chars, {
