@@ -70,6 +70,13 @@ body {
   padding: 20px;
 }
 
+.cbdGame {
+    overflow: visible;
+    height: auto;
+    opacity: 1;
+    pointer-events: auto;
+}
+
 /* Page Loader */
 .js .loading::before,
 .js .loading::after {
