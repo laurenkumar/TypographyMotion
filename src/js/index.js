@@ -55,7 +55,7 @@ let DOM = {
 };
 
 window.YT.ready(function() {
-      new window.YT.Player("video", {
+      new window.YT.Player("player", {
         videoId: "y4L2GvfY1Mw",
         events: {
           onReady: onPlayerReady,
