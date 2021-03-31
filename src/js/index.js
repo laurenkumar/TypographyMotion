@@ -245,7 +245,7 @@ const switchContent = () => {
     DOM.content.home.isVisible = !DOM.content.about.isVisible;
 };
 
-const gameAppear = () => {
+const gameAppear= () => {
     console.log("toto);
 };
 
