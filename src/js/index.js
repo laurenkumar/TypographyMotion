@@ -239,3 +239,7 @@ DOM.links.home.addEventListener('click', () => {
     if ( DOM.content.home.isVisible ) return;
     switchContent();
 });
+DOM.links.game.addEventListener('click', () => {
+    if ( DOM.content.game.isVisible ) return;
+    switchContent();
+});
