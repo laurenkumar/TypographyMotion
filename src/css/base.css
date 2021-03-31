@@ -71,9 +71,9 @@ body {
 }
 
 .cbdGame {
-    overflow: visible;
+    overflow: visible !important;
     height: auto;
-    opacity: 1;
+    opacity: 1 !important;
     pointer-events: auto;
 }
 
