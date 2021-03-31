@@ -246,7 +246,7 @@ const switchContent = () => {
 };
 
 const gameAppear = () => {
-    DOM.content.home.isVisible = true;
+    DOM.content.game.isVisible = true;
 };
 
 DOM.links.about.anchor.addEventListener('click', () => switchContent());
