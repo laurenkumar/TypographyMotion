@@ -54,12 +54,24 @@ let DOM = {
     }
 };
 
-new YT.Player('player', {
-            videoId: 'y4L2GvfY1Mw',
-            events: {
-                onReady: e => e.target.playVideo()
-            }
-});
+window.YT.ready(function() {
+      new window.YT.Player("video", {
+        videoId: "y4L2GvfY1Mw",
+        events: {
+          onReady: onPlayerReady,
+          onStateChange: onPlayerStateChange
+        }
+      });
+    });
+
+function onPlayerReady(event) {
+    event.target.playVideo();
+  }
+
+  function onPlayerStateChange(event) {
+    var videoStatuses = Object.entries(window.YT.PlayerState);
+    console.log(videoStatuses.find(status => status[1] === event.data)[0]);
+  }
 
 (function() {
   
