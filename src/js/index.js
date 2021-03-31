@@ -246,7 +246,7 @@ const switchContent = () => {
 };
 
 const gameAppear = () => {
-    console.log("toto");
+    DOM.content.home.isVisible = true;
 };
 
 DOM.links.about.anchor.addEventListener('click', () => switchContent());
