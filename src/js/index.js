@@ -245,8 +245,14 @@ const switchContent = () => {
     DOM.content.home.isVisible = !DOM.content.about.isVisible;
 };
 
+const gameAppear = () => {
+    console.log("toto);
+};
+
 DOM.links.about.anchor.addEventListener('click', () => switchContent());
 DOM.links.home.addEventListener('click', () => {
     if ( DOM.content.home.isVisible ) return;
     switchContent();
 });
+DOM.links.game.anchor.addEventListener('click', () => gameAppear());
+
