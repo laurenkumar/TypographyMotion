@@ -241,11 +241,7 @@ const switchContent = () => {
     DOM.links.about.stateElement[0].classList[DOM.content.about.isVisible ? 'add' : 'remove']('frame__about-item--current');
     DOM.links.about.stateElement[1].classList[DOM.content.about.isVisible ? 'remove' : 'add']('frame__about-item--current');
     timeline[DOM.content.about.isVisible ? 'reverse' : 'play']();
-    DOM.links.game.stateElement[0].classList[DOM.content.game.isVisible ? 'add' : 'remove']('frame__game-item--current');
-    DOM.links.game.stateElement[1].classList[DOM.content.game.isVisible ? 'remove' : 'add']('frame__game-item--current');
-    timeline[DOM.content.game.isVisible ? 'reverse' : 'play']();
     DOM.content.about.isVisible = !DOM.content.about.isVisible;
-    DOM.content.game.isVisible = !DOM.content.about.isVisible;
     DOM.content.home.isVisible = !DOM.content.about.isVisible;
 };
 
@@ -254,7 +250,3 @@ DOM.links.home.addEventListener('click', () => {
     if ( DOM.content.home.isVisible ) return;
     switchContent();
 });
-DOM.links.game.addEventListener('click', () => {
-    if ( DOM.content.game.isVisible ) return;
-    switchContent();
-}); 
