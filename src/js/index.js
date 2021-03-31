@@ -246,7 +246,7 @@ const switchContent = () => {
 };
 
 const gameAppear = () => {
-    DOM.content.game.isVisible = true;
+    DOM.content.game.section.className = "content__item content__item--game cbdGame";
     console.log(DOM.content.game.section.className);
 };
 
